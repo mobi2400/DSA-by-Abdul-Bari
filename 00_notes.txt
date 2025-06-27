@@ -1,0 +1,16 @@
+                Types of data structure
+1. physical
+            a. Array
+            b. linked list(dynamic memory allocation) 
+                -always store in heap memory
+                -used when size of an array is not fixed
+2. logical
+            a.linear
+                    A.Stack(LIFO)
+                    B.Queues(FIFO)
+            b.non-linear
+                    A.Tress
+                    B.Graph
+            c.tabular  
+                    A.Hash
+#these logical data structure is implemented using physical data structure
