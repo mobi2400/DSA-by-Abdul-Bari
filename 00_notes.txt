@@ -1,3 +1,7 @@
+                   Types of memory
+1.Stack
+2.heap
+
                 Types of data structure
 1. physical
             a. Array
@@ -10,7 +14,12 @@
                     B.Queues(FIFO)
             b.non-linear
                     A.Tress
-                    B.Graph
+                    B.Graph 
             c.tabular  
                     A.Hash
-#these logical data structure is implemented using physical data structure
+#these logical data structure are implemented using physical data structure
+
+
+                     Data Type 
+1.reperesentation of data Type(int,float,----)
+2.operation on Data(arithematic)
