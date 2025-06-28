@@ -1,3 +1,4 @@
+ --------------------INTRODUCTION-------------------------------
                    Types of memory
 1.Stack
 2.heap
@@ -23,3 +24,17 @@
                      Data Type 
 1.reperesentation of data Type(int,float,----)
 2.operation on Data(arithematic)
+
+
+
+----------------------RECURSION--------------------------------
+def--func calling itself is called recuursive function
+    - there should be base cond to make him stop or init
+    - has two face
+                  --calling phase[Ascending]
+                        --code is excuted before Recursion
+                  --returning phase[Descending]
+                        --code is excuted after Recursion
+# major difference between recursive func and loop is, loop has  only calling phase where recursive has both
+#recursive func are memory consuming function
+#time complexity is O(n)
