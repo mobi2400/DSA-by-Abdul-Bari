@@ -1,4 +1,4 @@
- --------------------INTRODUCTION-------------------------------
+ --------------------INTRODUCTION-----------------------------
                    Types of memory
 1.Stack
 2.heap
@@ -27,7 +27,7 @@
 
 
 
-----------------------RECURSION--------------------------------
+----------------------RECURSION-------------------------------
 def--func calling itself is called recuursive function
     - there should be base cond to make him stop or init
     - has two face
@@ -38,3 +38,20 @@ def--func calling itself is called recuursive function
 # major difference between recursive func and loop is, loop has  only calling phase where recursive has both
 #recursive func are memory consuming function
 #time complexity is O(n)
+
+#types of Recursion
+        1.Tail Recursion
+                -when func call itself at the last line of the func
+        #main   -all operation happen at the time of calling
+                - same as loop but take more space[O(n)] as compare to loop[O(1)] but take same time
+                - loop is more efficient(generally)
+        2.Head Recursion
+                -when doesnt perform any operation at the time of calling
+                -operation is done at the time of calling
+                -can not convert into loop but very tricky and code doesnt look the same as earlier
+        3.tree Recursion
+                -when func is called multiple time
+                -time complexity is decided by no of times fun is called
+                -space complexity O(n)
+        4.Indirect Recursion
+        5.Nested Recursion
