@@ -55,3 +55,6 @@ def--func calling itself is called recuursive function
                 -space complexity O(n)
         4.Indirect Recursion
         5.Nested Recursion
+
+Indirect Recursion - when multiple function call themselves in a
+                     circular pattern at certain condition
