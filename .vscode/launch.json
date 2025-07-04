@@ -2,6 +2,152 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Launch Chrome",
+      "request": "launch",
+      "type": "chrome",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}"
+    },
+    
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Cargo launch",
+      "cargo": {
+        "args": [
+          "build",
+          "--lib"
+        ]
+      },
+      "args": []
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Cargo test",
+      "cargo": {
+        "args": [
+          "test",
+          "--no-run",
+          "--lib"
+        ]
+      },
+      "args": []
+    },
+    {
+      "type": "cmake",
+      "request": "launch",
+      "name": "CMake: Configure project",
+      "cmakeDebugType": "configure",
+      "clean": false,
+      "configureAll": false
+    },
+    {
+      "name": "(gdb) Bash on Windows Attach",
+      "type": "cppdbg",
+      "request": "attach",
+      "program": "enter program name, for example ${workspaceFolder}/a.exe",
+      "processId": "${command:pickRemoteProcess}",
+      "pipeTransport": {
+        "debuggerPath": "/usr/bin/gdb",
+        "pipeProgram": "${env:windir}\\system32\\bash.exe",
+        "pipeArgs": ["-c"],
+        "pipeCwd": ""
+      },
+      "setupCommands": [
+          {
+              "description": "Enable pretty-printing for gdb",
+              "text": "-enable-pretty-printing",
+              "ignoreFailures": true
+          },
+          {
+              "description": "Set Disassembly Flavor to Intel",
+              "text": "-gdb-set disassembly-flavor intel",
+              "ignoreFailures": true
+          }
+      ]
+    },
+    {
+      "name": "(gdb) Attach",
+      "type": "cppdbg",
+      "request": "attach",
+      "program": "enter program name, for example ${workspaceFolder}/a.exe",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/path/to/gdb",
+      "setupCommands": [
+          {
+              "description": "Enable pretty-printing for gdb",
+              "text": "-enable-pretty-printing",
+              "ignoreFailures": true
+          },
+          {
+              "description": "Set Disassembly Flavor to Intel",
+              "text": "-gdb-set disassembly-flavor intel",
+              "ignoreFailures": true
+          }
+      ]
+    },
+    {
+      "name": "(gdb) Attach",
+      "type": "cppdbg",
+      "request": "attach",
+      "program": "enter program name, for example ${workspaceFolder}/a.exe",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/path/to/gdb",
+      "setupCommands": [
+          {
+              "description": "Enable pretty-printing for gdb",
+              "text": "-enable-pretty-printing",
+              "ignoreFailures": true
+          },
+          {
+              "description": "Set Disassembly Flavor to Intel",
+              "text": "-gdb-set disassembly-flavor intel",
+              "ignoreFailures": true
+          }
+      ]
+    },
+    {
+      "name": "(gdb) Attach",
+      "type": "cppdbg",
+      "request": "attach",
+      "program": "enter program name, for example ${workspaceFolder}/a.exe",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/path/to/gdb",
+      "setupCommands": [
+          {
+              "description": "Enable pretty-printing for gdb",
+              "text": "-enable-pretty-printing",
+              "ignoreFailures": true
+          },
+          {
+              "description": "Set Disassembly Flavor to Intel",
+              "text": "-gdb-set disassembly-flavor intel",
+              "ignoreFailures": true
+          }
+      ]
+    },
+    {
+      "name": "(gdb) Attach",
+      "type": "cppdbg",
+      "request": "attach",
+      "program": "enter program name, for example ${workspaceFolder}/a.exe",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/path/to/gdb",
+      "setupCommands": [
+          {
+              "description": "Enable pretty-printing for gdb",
+              "text": "-enable-pretty-printing",
+              "ignoreFailures": true
+          },
+          {
+              "description": "Set Disassembly Flavor to Intel",
+              "text": "-gdb-set disassembly-flavor intel",
+              "ignoreFailures": true
+          }
+      ]
+    },
+    {
       "name": "(gdb) Attach",
       "type": "cppdbg",
       "request": "attach",
