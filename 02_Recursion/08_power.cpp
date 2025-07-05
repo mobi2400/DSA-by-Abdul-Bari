@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int power(int n,int m){
+double power(int n,int m){
     if (m==0)
     {
         return 1;
@@ -21,7 +21,7 @@ int power(int m, int n){
 
 
 int main(){
-   int pow= power(2,10);
+   double pow= power(16,16);
    cout<<pow;
     return 0;
 }

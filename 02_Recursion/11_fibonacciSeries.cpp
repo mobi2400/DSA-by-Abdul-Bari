@@ -27,7 +27,7 @@ int main(){
 
 int fib(int n){
 
-    static int F[10]; // initially every value inside an array is -1(assume)
+    static int F[10]; // initially every value inside an array is -1(assume){first initialize -1 by loop method}
     if(n<=1){
         F[n]=n;
         return n;
