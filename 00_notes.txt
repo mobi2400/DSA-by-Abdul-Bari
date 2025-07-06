@@ -59,3 +59,62 @@ def--func calling itself is called recuursive function
 
 Indirect Recursion - when multiple function call themselves in a
                      circular pattern at certain condition
+
+
+-----------------------ARRAY----------------------------------
+collection of same typees of data
+#types
+        --Scalar- store only one value
+        --Vector- store multiple value
+#declaration
+1.first declaring  int A[5]
+                        stores garabage value before assigning
+2.declare and assign at the same time
+                int A[5]={2,4,6,8,10}
+3.declare and half assign
+                int A[5]={2,4}
+                        rest of the value is 0 by default
+4.dynamic
+        int A[]={2,4,6,8,10}
+                        size depends on no of value storing
+
+#how to print the value
+1.printf("%d",A[2])
+2.printf("%d",2[A])
+3.printf("%d",*(A+2)) //pointer method
+
+#Static and Dynamic array
+array is stored in stack - generally
+-To store in Heap memory                
+                int A[5]
+                int *
+                P= new int[5]
+
+                delete []P-- delete the unused storage to  avoid memory leak [] is used bcz P is an array
+##size of an array cannot be modified once declared in stack
+        but in heap it can be done but indirectly
+        
+        code
+                int *P=new int[5]
+                int *q=new int[10]
+                for(int i = 0;i<5;i++)
+                        q[i]=p[i]
+                delete []P
+                P=q
+                q=null
+#2D Array
+-generarlly used to stored matrices and value in tabular format
+--declared
+        1. int A[3][4]
+               - all memory in stack
+        2. int *A[3]
+                A[0]=new int[4]
+                A[1]=new int[4]
+                A[2]=new int[4]
+                - half in stack and half in heap
+        3. int **A
+                A = new int *[3]
+                A[0]=new int[4]
+                A[1]=new int[4]
+                A[2]=new int[4]
+                - full in heap
